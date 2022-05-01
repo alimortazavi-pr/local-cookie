@@ -10,12 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alimortazavi-pr/LocalCookie.git"
+    "url": "git+https://github.com/alimortazavi-pr/local-cookie.git"
   },
+  "keywords": ["cookie", "local", "local-storage","javascript"],
   "author": "Ali Mortazavi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alimortazavi-pr/LocalCookie/issues"
+    "url": "https://github.com/alimortazavi-pr/local-cookie/issues"
   },
-  "homepage": "https://github.com/alimortazavi-pr/LocalCookie#readme"
+  "homepage": "https://github.com/alimortazavi-pr/local-cookie#readme"
 }

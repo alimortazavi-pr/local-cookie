@@ -14,3 +14,5 @@ export function getCookie(cookieName: string) {
   });
   return res;
 }
+
+export default { setCookie, getCookie };
