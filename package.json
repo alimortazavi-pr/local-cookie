@@ -1,0 +1,21 @@
+{
+  "name": "am-local-cookie",
+  "version": "0.0.2",
+  "description": "easy set and get cookie",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alimortazavi-pr/LocalCookie.git"
+  },
+  "author": "Ali Mortazavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alimortazavi-pr/LocalCookie/issues"
+  },
+  "homepage": "https://github.com/alimortazavi-pr/LocalCookie#readme"
+}

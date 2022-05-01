@@ -1,0 +1,1 @@
+You can use cookie like local-storage
