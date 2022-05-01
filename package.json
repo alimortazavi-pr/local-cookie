@@ -1,6 +1,6 @@
 {
   "name": "am-local-cookie",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "easy set and get cookie",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
