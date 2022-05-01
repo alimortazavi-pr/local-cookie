@@ -3,8 +3,6 @@
 ```js
 // install with npm 
 npm install am-local-storage
-// install with yarn
-yarn add am-local-storage
 ```
 
 ## Usage
@@ -13,24 +11,43 @@ yarn add am-local-storage
 import localCookie from 'am-local-cookie';
 
 //Set cookie
-localCookie.setCookie("username","Ali_Mortazavi");
+localCookie.set(key:string,value,expire_day:number,path:string);
 
 //Get cookie
-localCookie.setCookie("username"); //Ali_Mortazavi
+localCookie.get(key);
+
+//Remove cookie
+localCookie.remove(key);
 ```
 
 ## Usage with Require 
 
 ```js
 import localCookie from 'am-local-cookie';
-//or
-import {setCookie , getCookie} from 'am-local-cookie';
 
 //Set cookie
-localCookie.setCookie("username","Ali_Mortazavi");
+localCookie.set(key:string,value);
 
 //Get cookie
-localCookie.setCookie("username"); //Ali_Mortazavi
+localCookie.get(key);
+
+//Remove cookie
+localCookie.remove(key);
+```
+
+## Example
+
+```js
+import localCookie from 'am-local-cookie';
+
+//Set cookie
+localCookie.set("name","Ali Mortazavi",60,"/");
+
+//Get cookie
+localCookie.get("name"); //Ali Mortazavi
+
+//Remove cookie
+localCookie.remove("name");
 ```
 
 ## Features

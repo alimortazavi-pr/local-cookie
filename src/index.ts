@@ -1,10 +1,19 @@
 // Set a Cookie
-export function setCookie(cookieName: string, cookieValue: any) {
-  document.cookie = cookieName + "=" + cookieValue + "; ";
+function set(
+  cookieName: string,
+  cookieValue: any,
+  expDays: number = 30,
+  path: string = "/"
+) {
+  let date = new Date();
+  date.setTime(date.getTime() + expDays * 24 * 60 * 60 * 1000);
+  const expires = "expires=" + date.toUTCString();
+  document.cookie =
+    cookieName + "=" + cookieValue + "; " + expires + "; path=" + path + ";";
 }
 
 // Get a Cookie
-export function getCookie(cookieName: string) {
+function get(cookieName: string) {
   const name = cookieName + "=";
   const cDecoded = decodeURIComponent(document.cookie);
   const cArr = cDecoded.split("; ");
@@ -15,4 +24,11 @@ export function getCookie(cookieName: string) {
   return res;
 }
 
-export default { setCookie, getCookie };
+// Remove a Cookie
+function remove(cookieName: string) {
+  if (get(cookieName)) {
+    document.cookie = cookieName + "=;";
+  }
+}
+
+export default { set, get, remove };
